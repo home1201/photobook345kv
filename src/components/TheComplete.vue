@@ -32,7 +32,7 @@ export default {
   img {
     aspect-ratio: v-bind(imgWidth) / v-bind(imgHeight);
     object-fit: contain;
-    width: 30rem;
+    width: 25rem;
   }
 
   p {
