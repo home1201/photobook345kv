@@ -1,0 +1,23 @@
+.u-hide {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.u-max-width {
+  max-width: 65rem;
+}
+
+.u-pad-in-200 {
+  padding-inline: var(--size-200);
+}
+
+.u-button {
+  display: inline-block;
+  padding: var(--size-000) var(--size-150);
+  border-radius: var(--radius-min);
+
+}

@@ -1,0 +1,67 @@
+:root {
+  --size-min: .25rem;
+  --size-000: .5rem;
+  --size-050: .75rem;
+  --size-100: 1rem;
+  --size-150: 1.25rem;
+  --size-200: 1.5rem;
+  --size-250: 1.75rem;
+  --size-300: 2rem;
+  --size-350: 2.25rem;
+  --size-400: 2.5rem;
+  --size-450: 2.75rem;
+  --size-500: 3rem;
+  --size-550: 3.25rem;
+  --size-600: 3.5rem;
+  --size-650: 3.75rem;
+  --size-700: 4rem;
+  --size-750: 5rem;
+  --size-800: 6rem;
+  --size-850: 7rem;
+  --size-900: 8rem;
+  --size-950: 9rem;
+  --size-max: 10rem;
+
+  --char-size-min: .5ch;
+  --char-size-100: 1ch;
+  --char-size-200: 1.5ch;
+  --char-size-300: 2ch;
+  --char-size-400: 2.5ch;
+  --char-size-500: 3ch;
+  --char-size-600: 3.5ch;
+  --char-size-700: 4ch;
+  --char-size-800: 4.5ch;
+  --char-size-max: 5ch;
+
+  --cjk-size-min: .5ic;
+  --cjk-size-100: 1ic;
+  --cjk-size-200: 1.5ic;
+  --cjk-size-300: 2ic;
+  --cjk-size-400: 2.5ic;
+  --cjk-size-500: 3ic;
+  --cjk-size-600: 3.5ic;
+  --cjk-size-700: 4ic;
+  --cjk-size-800: 4.5ic;
+  --cjk-size-max: 5ic;
+
+  --radius-base: 15px;
+  --radius-min: calc(var(--radius-base) / 2);
+  --radius-large: calc(var(--radius-base) * 2);
+  --radius-max: 50%;
+}
+
+:root {
+  --gray-0: #f8f9fa;
+  --gray-1: #f1f3f5;
+  --gray-2: #e9ecef;
+  --gray-3: #dee2e6;
+  --gray-4: #ced4da;
+  --gray-5: #adb5bd;
+  --gray-6: #868e96;
+  --gray-7: #495057;
+  --gray-8: #343a40;
+  --gray-9: #212529;
+  --gray-10: #16191d;
+  --gray-11: #0d0f12;
+  --gray-12: #030507;
+}
