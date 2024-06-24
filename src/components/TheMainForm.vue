@@ -52,6 +52,7 @@ export default {
         },
         subAddress: { keyName: "나머지 주소", content: "" },
         quantity: { keyName: "받을 권수", content: "", required: true },
+        depositor: { keyName: "입금자명", content: "", required: true },
         email: { type: "email", keyName: "이메일", content: "" },
         etc: { type: "textarea", keyName: "남기고 싶은 말", content: "" },
       },
@@ -74,6 +75,7 @@ export default {
       const quantityInputId = "entry.228645623";
       const emailInputId = "entry.371759033";
       const etcInputId = "entry.542424423";
+      const depositorInputId = "entry.1417473510";
 
       const nameUrl = nameInputId + "=" + this.inputItems.name.content;
       const telUrl = telInputId + "=" + this.inputItems.tel.content;
@@ -85,10 +87,12 @@ export default {
         `${this.inputItems.address.content} ${this.inputItems.subAddress.content}`;
       const quantityUrl =
         quantityInputId + "=" + this.inputItems.quantity.content;
+      const depositorUrl =
+        depositorInputId + "=" + this.inputItems.depositor.content;
       const emailUrl = emailInputId + "=" + this.inputItems.email.content;
       const etcUrl = etcInputId + "=" + this.inputItems.etc.content;
 
-      const url = `https://docs.google.com/forms/d/e/1FAIpQLSf4fGa2NkEcZO2D75R50oGbqPEaMEFcl84qhPbS86SJg2Udkw/formResponse?${nameUrl}&${telUrl}&${zonecodeUrl}&${addressUrl}&${quantityUrl}&${emailUrl}&${etcUrl}`;
+      const url = `https://docs.google.com/forms/d/e/1FAIpQLSf4fGa2NkEcZO2D75R50oGbqPEaMEFcl84qhPbS86SJg2Udkw/formResponse?${nameUrl}&${telUrl}&${zonecodeUrl}&${addressUrl}&${quantityUrl}&${depositorUrl}&${emailUrl}&${etcUrl}`;
       fetch(url)
         .then((res) => res.json())
         .then(this.$emit("submit-complete"));

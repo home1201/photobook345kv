@@ -22,6 +22,7 @@ export default {
         "어우기",
         "정운",
         "허란",
+        "뉴스민",
       ],
     };
   },
@@ -36,7 +37,7 @@ export default {
 }
 .content {
   text-wrap: wrap;
-  width: 70%;
+  width: 80%;
 
   .person-name {
     &:not(:last-child) {
